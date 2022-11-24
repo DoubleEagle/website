@@ -4,6 +4,7 @@ type: post
 layout: post.njk
 tags: 
     - post
+    - crochet
 featured-img: /img/vogel-stack.jpeg
 ---
 
