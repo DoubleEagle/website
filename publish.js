@@ -6,7 +6,7 @@ ghpages.publish(
   "dist",
   {
     repo: "https://github.com/DoubleEagle/website.git",
-    branch: "dist",
+    branch: "gh-pages",
   },
   function (err) {
     if(err) {
