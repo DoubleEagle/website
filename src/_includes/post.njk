@@ -1,0 +1,19 @@
+---
+title: Project
+layout: base.njk
+---
+
+<article class="post">
+
+  <div class="post-header">
+    <h1 class="post-title">{{ title }}</h1>
+  </div>
+
+  {{ content | safe }}
+
+</article>
+
+<a href="/projects" class="back no-underline">
+  <span class="emoji"> 👈 </span>
+  <span class="underline">Back to projects overview</span>
+</a>
