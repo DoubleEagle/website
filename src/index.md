@@ -1,8 +1,8 @@
 ---
 layout: base.njk
-title: joannespijker.nl
+title: Home
 ---
 
 
-# Title :)
+# Title
 test
