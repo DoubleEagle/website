@@ -9,6 +9,13 @@ title: Projects
 
 <ul class="projects-grid">
 {%- for post in collections.post -%}
-  <li><a href="{{ post.url }}"><img src="{{post.data.featured-img}}"></a></li>
+    <a href="{{ post.url }}">
+        <li class="project-polaroid">
+            <img src="{{post.data.featured-img}}">
+            <div class="project-name">
+                {{ post.data.title }}
+            </div>
+        </li>
+    </a>
 {%- endfor -%}
 </ul>
