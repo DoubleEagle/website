@@ -23,7 +23,7 @@ h1 {
     align-items: center;
 }
 
-.projects-title {
+.projects-title, .post-title {
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
