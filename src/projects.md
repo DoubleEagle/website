@@ -11,7 +11,7 @@ title: Projects
 {%- for post in collections.post -%}
     <a href="{{ post.url }}">
         <li class="project-polaroid">
-            <img src="{{post.data.featured-img}}">
+            <img class="thumbnail" src="{{post.data.featured-img}}">
             <div class="project-name">
                 {{ post.data.title }}
             </div>
