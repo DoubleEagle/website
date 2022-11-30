@@ -5,7 +5,7 @@ layout: post.njk
 tags: 
     - post
     - crochet
-featured-img: /img/vogel-stack.jpeg
+featured-img: /img/thumb-vogel-stack.jpeg
 ---
 
 Ik heb vogels gehaakt. De eerste is een dikkie, maar de twee is wel elegant. Samen vullen ze elkaar mooi aan. (🤮)

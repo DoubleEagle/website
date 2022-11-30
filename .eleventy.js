@@ -10,27 +10,31 @@ const path = require("path");
 //     console.log( stats );
 //   })();
 
+const THUMB = 200;
+const FULL = 1000;
+
 async function imageShortcode(src, alt) {
     let metadata = await Image(`src/img/${src}`, {
-        widths: [200],
+		widths: [THUMB,FULL],
         formats: ["jpg", null],
         outputDir: "./dist/img",
         urlPath: "/img/",
         filenameFormat: function (id, src, width, format, options) {
-        const target = src
-            .split("/")
-            .filter((e, i) => i > 1)
-            .join("/");
-        const extension = path.extname(src);
-        const name = path.basename(src, extension);
-        // return target;
-        return `${name}.${format}`;
+            const target = src
+                .split("/")
+                .filter((e, i) => i > 1)
+                .join("/");
+            const extension = path.extname(src);
+            const name = path.basename(src, extension);
+            // return target;
+            if(width === THUMB) return `thumb-${name}.${format}`;
+			else return `${name}.${format}`;
         },
         sharpJpegOptions: {
-        quality: 60,
+            quality: 60,
         },
         sharpPngOptions: {
-        quality: 60,
+            quality: 60,
         },
     });
 
