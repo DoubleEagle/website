@@ -1,6 +1,10 @@
-/* body {
-    background-color: red;
-} */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B8D4E3;
+}
 
 .container {
     max-width: 600px;
@@ -20,14 +24,19 @@ h1 {
 }
 
 .projects-header {
+    margin-top: 20px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    background-color: #4a4a4a;
+    color: white;
+    text-shadow: 1px 1px 0.5px #b7b7b7;
 }
 
 img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    /* margin: 20px; */
 }
 
 .projects-grid {
@@ -43,10 +52,20 @@ img {
 
 .project-polaroid {
     padding: 20px;
-    background: #B8D4E3;
+    background: white;
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
     gap: 20px;
-    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+.post img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightgoldenrodyellow;
 }
